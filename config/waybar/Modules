@@ -465,12 +465,7 @@
 	"tooltip": true,
 	"tooltip-format": "Left Click: Wallpaper Menu\nMiddle Click: Random wallpaper\nRight Click: Waybar Styles Menu",
 },
-"custom/hint": {
-	"format": "󰺁 HINT!",
-	"on-click": "$HOME/.config/hypr/scripts/KeyHints.sh",
-	"tooltip": true,
-	"tooltip-format": "󱧣 Quick Tips",
-},
+
 // Hypridle inhibitor
 "custom/hypridle": {
     "format": " 󱫗 ",
