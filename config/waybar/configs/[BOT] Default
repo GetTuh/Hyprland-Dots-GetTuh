@@ -19,36 +19,17 @@
 "margin-right": 8,
 
 "modules-left": [
-	"hyprland/workspaces#pacman",
-	"custom/separator#dot-line",
-	"cpu",
-	"custom/separator#dot-line", 
-	"temperature",
-	"custom/separator#dot-line", 
-	"memory",
-	"custom/separator#dot-line",
-	"custom/weather",
-	"custom/separator#blank_3",
-	"custom/cava_mviz",
+	"hyprland/workspaces#pacman"
 	],
 
-"modules-center": [
-	"custom/menu",
-	"custom/separator#dot-line",
+
+
+"modules-right": [
 	"idle_inhibitor", 
-	"custom/separator#dot-line",
-	"clock",
 	"custom/separator#dot-line",
 	"custom/light_dark",
 	"custom/separator#dot-line",	
 	"custom/lock",
-	//],
-	"custom/separator#dot-line",
-	"custom/hint",	
-	], 
-
-"modules-right": [
-	"network#speed",
 	"custom/separator#dot-line",
 	"custom/swaync",
 	"tray",
@@ -60,10 +41,6 @@
 	"custom/separator#dot-line",
 	"pulseaudio#microphone",
 	"custom/separator#dot-line",
-	"keyboard-state",
-	"custom/separator#dot-line",
-	"custom/keyboard",
-	"custom/separator#dot-line",
-	"custom/power",
+	"clock"
 	],
 }
