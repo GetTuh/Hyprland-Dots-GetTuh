@@ -2,9 +2,9 @@
 /* Waybar Workspaces modules */
 
 /* Generally, this is a potential expanding of choices for hyprland/workspace */
-// HYPRLAND WORKSPACES. CHOOSE as desired and place on waybar configs
-
 {
+
+// HYPRLAND WORKSPACES. CHOOSE as desired and place on waybar configs
 // CIRCLES Style
 "hyprland/workspaces": {
 	"active-only": false,
@@ -158,21 +158,25 @@
 		"title<.*amazon.*>": " ",
 		"title<.*reddit.*>": " ",
 		"title<.*Picture-in-Picture.*>": " ",
-		"class<firefox|org.mozilla.firefox>": " ",
-		"class<kitty|konsole>": " ",
+		"class<firefox>": " ",
+		"class<org.mozilla.firefox>": " ",
+		"class<kitty>": " ",
 		"class<kitty-dropterm>": " ",
-		"class<Chromium>": " ",
-		"class<org.telegram.desktop|io.github.tdesktop_x64.TDesktop>": " ",
-		"class<[Ss]potify>": " ",
-		"class<VSCode|code-url-handler|code-oss|codium|codium-url-handler|VSCodium>": "󰨞 ",
+		"class<konsole>": " ",
+		"class<Chromium>": "<span font='12'> </span>",
+		"class<org.telegram.desktop|io.github.tdesktop_x64.TDeskto>": "<span font='12'> </span>",
+		"class<[Ss]potify>": "<span font='12'> </span>",
+		"class<VSCode|code-url-handler>": "<span font='12'>󰨞</span>",
 		"class<thunar>": "󰝰 ",
-		"class<[Tt]hunderbird|[Tt]hunderbird-esr>": " ",
-		"class<discord|[Ww]ebcord>": " ",
+		"class<[Tt]hunderbird>": " ",
+		"class<discord>": " ",
+		"class<WebCord>": " ",
 		"class<subl>": "󰅳 ",
-		"class<mpv>": " ",
 		"class<celluloid>": " ",
 		"class<Cider>": "󰎆 ",
 		"class<virt-manager>": " ",
+		"class<code-oss>": "󰨞 ",
+		"class<codium|codium-url-handler|VSCodium>": "󰨞 ",
 		"class<codeblocks>": "󰅩 ",
 		"class<mousepad>": " ",
 		"class<libreoffice-writer>": " ",
