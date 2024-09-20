@@ -2,20 +2,10 @@
 /* Waybar Modules */
 
 {
-/* NOTE: hyprland-workspaces on a separate file */
-// Weather and Temperature Modules as this is most like to change always. 
+/* NOTE: hyprland-workspaces and Custom Modules on a separate files */
+/* Weather Temperature Modules as this is most like to change always. */
 // Result is of course easier to edit
-"custom/weather": {
-	"format": "{}",
-	"format-alt": "{alt}: {}",
-	"format-alt-click": "click",
-	"interval": 3600,
-	"return-type": "json",
-	"exec": "$HOME/.config/hypr/UserScripts/Weather.sh",
-	//"exec": "$HOME/.config/hypr/UserScripts/Weather.py",
-	"exec-if": "ping wttr.in -c1",
-	"tooltip": true,
-},
+
 "temperature": {
 	"interval": 10,
 	"tooltip": true,
@@ -32,6 +22,7 @@
 	],
 	"on-click-right": "kitty --title nvtop sh -c 'nvtop'"
 },
+
 "temperature#vertical": {
 	"interval": 10,
 	"tooltip": true,
@@ -49,62 +40,6 @@
 	"on-click-right": "kitty --title nvtop sh -c 'nvtop'"
 },
 
-
-// GROUP
-"group/motherboard": {
-	"orientation": "horizontal",
-	"modules": [
-		"cpu",
-		"memory",
-		"temperature",
-		"disk",
-	]
-},
-"group/mobo_drawer": {
-	"orientation": "inherit",
-	"drawer": {
-		"transition-duration": 500,
-		"children-class": "cpu",
-		"transition-left-to-right": true
-        },
-	"modules": [
-		"temperature",		
-		"cpu",	
-		"memory",
-		"disk",
-	]
-},
-"group/laptop": {
-	"orientation": "inherit",
-	"modules": [
-		"backlight",
-		"battery",
-	]
-},
-"group/audio": {
-	"orientation": "inherit",
-	"drawer": {
-		"transition-duration": 500,
-		"children-class": "pulseaudio",
-		"transition-left-to-right": true
-        },
-	"modules": [
-		"pulseaudio",
-		"pulseaudio#microphone",
-	]
-},
-"group/connections": {
-	"orientation": "inherit",
-	"drawer": {
-		"transition-duration": 500,
-		"children-class": "bluetooth",
-		"transition-left-to-right": true
-        },
-	"modules": [
-		"network",
-		"bluetooth",
-	]
-},
 "backlight": {
 	"interval": 2,
 	"align": 0,
@@ -165,7 +100,7 @@
 	"on-click-right": "$HOME/.config/hypr/scripts/Wlogout.sh",
 },
 "bluetooth": {
-	"format": "",
+	"format": " ",
 	"format-disabled": "󰂳",
 	"format-connected": "󰂱 {num_connections}",
 	"tooltip-format": " {device_alias}",
@@ -362,7 +297,7 @@
 	]
 },
 "power-profiles-daemon": {
-  "format": "{icon}",
+  "format": "{icon} ",
   "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
   "tooltip": true,
   "format-icons": {
